@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transactions - Bad Bank</title>
+  <link rel="stylesheet" href="./styles.css">
+  
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container mt-5">
+    <nav class="mb-4">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link" href="index.html" id="navHome" data-tooltip="Go to Home Page">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="deposit.html" id="navDeposit" data-tooltip="Add money to your account">Deposit</a></li>
+        <li class="nav-item"><a class="nav-link" href="withdraw.html" id="navWithdraw" data-tooltip="Withdraw money from your account">Withdraw</a></li>
+        <li class="nav-item"><a class="nav-link active" href="transactions.html" id="navTransactions" data-tooltip="View your transactions">Transactions</a></li>
+        <li class="nav-item"><a class="nav-link" href="create-account.html" id="navCreateAccount" data-tooltip="Create a new account">Create Account</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html" id="navLogin" data-tooltip="Login to your account">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Transactions</h5>
+        <div id="transaction-history">
+          <!-- This div will be populated by JavaScript -->
+          <p>Loading transactions...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  
+  <!-- Include Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIqyjQHC6I5WXtvJXTVZ+4llrbYvjo6IBe7YiUhvpDORXsmHZe7" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgSn/ye+ohdLwAnbLx5n1p+6FTzwhj6JVBn/6wGAUR5n8Ka8/+" crossorigin="anonymous"></script>
+</body>
+</html>
